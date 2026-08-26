@@ -1,4 +1,4 @@
-# Project Work - Machine Learning applicato allo Smart Ticketing: dalla generazione dati tramite LLM allo smistamento automatico dei ticket 
+# Project Work - Machine Learning applicato allo Smart Ticketing: dalla generazione dati tramite LLM multi-agent allo smistamento automatico dei ticket 
 
 Project Work di Stagnitta Gabriele (mat. 0312401645) dedicato allo sviluppo di un sistema end-to-end di **Natural Language Processing (NLP)** e **Machine Learning** per l'automazione del triage di ticket aziendali con Machine Learning.
 
@@ -17,8 +17,10 @@ Il repository è così organizzato:
  ┣ 📂 input/              # File utilizzati per la generazione elementare + batch di esempio per elaborazione ticket
  ┣ 📂 modelli/            # Modelli e Vettorizzatori utili al funzionamento della dashboard realizzati durante la Pipeline ML
  ┣ 🗄️01_Generazione_Dataset_Elementare.ipynb
- ┣ 🗄️02_Generazione_Dataset_Avanzato_Con_Gemma.ipynb
+ ┣ 🗄️02.1_Generazione_Dataset_Avanzato_Con_Gemma.ipynb
+ ┣ 🗄️02.2_Generazione_Architettura_Actor_Critic.ipynb
  ┣ 🗄️03_Pipeline_Machine_Learning.ipynb
+ ┣ 🗄️Machine Learning Applicato allo Smart Ticketing - Dalla generazione dati tramite LLM multi-agent allo smistamento automatico dei ticket.pdf
  ┗ 🗄️04_Dashboard.py
 ```
 ---
@@ -29,8 +31,10 @@ La prima fase del progetto si basa su diversi approcci per la creazione di datas
 All'interno della repo sono presenti due Notebook Jupyter dedicati:
 - **01 Generazione Dataset Elementare**
   - Crea in maniera pseudocasuale un dataset utilizzando un vocabolario ed estraendo casualmente le parole da utilizzare per formare una frase
-- **02 Generazione Dataset Avanzato con Gemma**
+- **02.1 Generazione Dataset Avanzato con Gemma**
   - Utilizzando *Gemma4:e2b* (modello di Intelligenza Artificiale open-source sviluppata da Google), genera un dataset creando in un ciclo un prompt con parametri casuali che chiede allo LLM di scrivere un ticket con quelle caratteristiche.
+- **02.2 Generazione Architettura Actor Critic**
+  - Miglioramento della struttura illustrata nel Jupyter precedente sfruttanto un architettura multi-agent.
 ### Pipeline ML
 Il cuore del progetto. Qui risiede il notebook che implementa la pipeline completa di Natural Language Processing e Machine Learning:
 
